@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Deposite</title>
+  </head>
+  <body>
+    <main class="flex items-center justify-center h-screen bg-slate-800">
+      <section
+        class="p-10 bg-slate-800 w-3/4 grid rounded-lg shadow-lg shadow-cyan-400/50"
+      >
+        <div class="left-img grid place-content-center">
+          <img
+            alt="image"
+            class="object-cover w-24"
+            src="./images/undraw_profile_pic_ic-5-t.svg"
+          />
+          <span class="text-white text-center mt-6">User Name</span>
+        </div>
+        <hr class="w-96 mx-auto mt-4" />
+        <div class="my-8 transaction-container grid grid-cols-3 gap-4">
+          <!-- deposite -->
+          <div class="p-6 deposite h-48 rounded-lg bg-emerald-400">
+            <h1
+              class="text-center text-4xl uppercase font-bold tracking-wide text-white"
+            >
+              Deposite
+            </h1>
+            <h1></h1>
+              TK
+              <span
+                id="depositePrint"
+                class="my-2  text-center text-6xl font-bold text-slate-500"
+                >00
+              </span>
+            </h1>
+          </div>
+          <!-- Withdraw -->
+          <div class="p-6 Witdhrow h-48 rounded-lg bg-orange-400">
+            <h1
+              class="text-center text-4xl uppercase font-bold tracking-wide text-white"
+            >
+              Withdraw
+            </h1>
+            <h1>
+              TK
+              <span
+                id="withdrawPrint"
+                class="my-2  text-center text-6xl font-bold text-slate-500"
+                >00
+              </span>
+            </h1>
+          </div>
+          <!-- Balance -->
+          <div class="p-6 Balance h-48 rounded-lg bg-cyan-400">
+            <h1
+              class="text-center text-4xl uppercase font-bold tracking-wide text-white"
+            >
+              Balance
+            </h1>
+            <h1>
+              TK<span
+                id="balancePrint"
+                class="my-2 text-center text-6xl font-bold text-slate-500"
+                >1000
+              </span>
+            </h1>
+          </div>
+        </div>
+        <!-- Tranjection Input Ammount -->
+        <div class="transection-input grid grid-cols-2 gap-4 my-8">
+          <div
+            class="transection-deposite p-6 Witdhrow h-48 rounded-lg bg-violet-600"
+          >
+            <h2 class="text-white font-bold text-2xl">Please Deposit</h2>
+            <input
+              class="block w-full h-8 px-4 rounded my-3"
+              type="text"
+              id="Deposite_value"
+              placeholder="$ ammount you want to deposit"
+            />
+            <input
+              class="cursor-pointer py-3 rounded px-8 bg-indigo-800 text-white hover:bg-indigo-900"
+              type="submit"
+              value="Deposit"
+              id="deposit_btn"
+            />
+          </div>
+          <div
+            class="transection-deposite p-6 Witdhrow h-48 rounded-lg bg-purple-600"
+          >
+            <h2 class="text-white font-bold text-2xl">Please Withdraw</h2>
+            <input
+              class="block w-full h-8 px-4 rounded my-3"
+              type="text"
+              placeholder="$ ammount you want to withdraw"
+              id="Withdraw_value"
+            />
+            <input
+              class="cursor-pointer py-3 rounded px-8 bg-indigo-800 text-white hover:bg-indigo-900"
+              type="submit"
+              value="Withdraw"
+              id="Withdraw_btn"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <h1 class="bg-blue-400">hello</h1>
+
+    <script src="./js/tranjection.js"></script>
+  </body>
+</html>
